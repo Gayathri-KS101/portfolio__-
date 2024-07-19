@@ -1,5 +1,5 @@
 body {
-    background-image: url("bg.png");
+    background-image: url("Art is not What.gif");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -15,9 +15,7 @@ body {
 
 
 
-#main-content {
-    position: relative;
-}
+
 
 .navbar {
     height: 73px; /* Adjust the height of the navbar */
@@ -52,50 +50,47 @@ body {
     margin: 0;
     text-align: center;
     overflow: hidden;
-    background-color: #000; /* Set a background color matching the video */
-    position: relative; /* Ensure the main image section is positioned correctly */
+    background-color: #000;
+    /* Set a background color matching the video */
+    position: relative;
+    /* Ensure the main image section is positioned correctly */
 }
 
 #mainimg video {
     width: 100%;
     height: auto;
-    background-color: #000; /* Set a background color matching the video */
+    background-color: #000;
+    /* Set a background color matching the video */
 }
 
 
 @media (max-width: 480px) {
-    .navbar {
-        background-image: url("navbarph(1).jpg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 227px;
-        width: 1075;
-        overflow: visible;
-        position: relative;
-        margin: 0 auto; /* Center the navbar */
-        padding: 0; /* Remove any padding */
-    }
-    
+
 
     .navbar a {
-        font-size: 10px; /* Adjust font size for smaller screens */
-        padding: 8px 12px; /* Adjust padding for smaller buttons */
+        font-size: 10px;
+        /* Adjust font size for smaller screens */
+        padding: 8px 12px;
+        /* Adjust padding for smaller buttons */
     }
 
     .dropdown-content {
-        min-width: auto; /* Allow content to adjust width */
+        min-width: auto;
+        /* Allow content to adjust width */
         border: #000;
     }
 
     .dropdown-content a {
-        font-size: 18px; /* Reduce font size for dropdown items */
+        font-size: 18px;
+        /* Reduce font size for dropdown items */
     }
 
     #mainimg video {
         content: url("finmainvidph(1).mp4");
         width: 100%;
         height: auto;
-        margin: 0 auto; /* Center the video horizontally */
+        margin: 0 auto;
+        /* Center the video horizontally */
         display: block;
     }
 }
@@ -125,38 +120,33 @@ body {
 
 
 }
+
 @media (max-width: 360px) {
-    .navbar {
-        background-image: url("navbarph(1).jpg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 227px;
-        width: 1075;
-        overflow: visible;
-        position: relative;
-        margin: 0 auto; /* Center the navbar */
-        padding: 0; /* Remove any padding */
-    }
-
+   
     .navbar a {
-        font-size: 10px; /* Adjust font size for smaller screens */
-        padding: 8px 12px; /* Adjust padding for smaller buttons */
+        font-size: 10px;
+        /* Adjust font size for smaller screens */
+        padding: 8px 12px;
+        /* Adjust padding for smaller buttons */
     }
 
     .dropdown-content {
-        min-width: auto; /* Allow content to adjust width */
+        min-width: auto;
+        /* Allow content to adjust width */
         border: #000;
     }
 
     .dropdown-content a {
-        font-size: 18px; /* Reduce font size for dropdown items */
+        font-size: 18px;
+        /* Reduce font size for dropdown items */
     }
 
     #mainimg video {
         content: url("finmainvidph(1).mp4");
         width: 100%;
         height: auto;
-        margin: 0 auto; /* Center the video horizontally */
+        margin: 0 auto;
+        /* Center the video horizontally */
         display: block;
     }
 }
@@ -183,6 +173,7 @@ body {
         max-width: 80%;
     }
 }
+
 @media (max-width: 1092px) {
     .navbar {
         width: 100%;
@@ -250,9 +241,9 @@ body {
 #cv1 h1 {
     font-size: 60px;
     text-align: center;
-    background-color:  rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     animation: glow;
-    
+
 }
 
 @media screen and (max-width: 480px) {
@@ -274,6 +265,7 @@ body {
     0% {
         box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
     }
+
     100% {
         box-shadow: 0 0 20px rgba(255, 255, 255, 1);
     }
@@ -283,7 +275,7 @@ body {
     margin-bottom: 20px;
 }
 
-.Aligh{
+.Aligh {
     max-width: 1000px;
 
 }
@@ -306,7 +298,7 @@ body {
 
 .skills li {
     margin-bottom: 5px;
-} 
+}
 
 /* Basic Styles */
 #skills1 h1 {
@@ -342,7 +334,7 @@ body {
 
 #skills1 div ol li:hover {
     transform: translateY(-5px);
-   
+
 }
 
 
@@ -355,26 +347,26 @@ body {
 
 #skills1 div ol li img#snapshots:hover {
     transform: translateY(-5px);
-    box-shadow: 10px 10px 10px 10x  rgba(89, 181, 126, 0.5);
+    box-shadow: 10px 10px 10px 10x rgba(89, 181, 126, 0.5);
     animation: glow-green 1s infinite alternate;
 }
 
 #skills1 div ol li img#highlights:hover {
     transform: translateY(-5px);
-    box-shadow: 10px 10px 10px 10x  rgba(232, 232, 20, 0.5);
+    box-shadow: 10px 10px 10px 10x rgba(232, 232, 20, 0.5);
     animation: glow-yellow 1s infinite alternate;
 }
 
 #skills1 div ol li img#animations:hover {
     transform: translateY(-5px);
-    box-shadow: 10px 10px 10px 10x  rgba(149, 89, 181, 0.5);
+    box-shadow: 10px 10px 10px 10x rgba(149, 89, 181, 0.5);
     animation: glow-purple 1s infinite alternate;
 }
 
 
 
-#services{ 
-    
+#services {
+
     /*background-image: url("");*/
     box-shadow: #000;
     -webkit-font-smoothing: antialiased;
@@ -419,18 +411,20 @@ body {
 
 #services .s-list .s-item li.service-item {
     font-size: 20px;
-    width: 250px; /* Fixed width for each box */
+    width: 250px;
+    /* Fixed width for each box */
     margin: 10px;
     padding: 20px;
     border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     background-color: none;
     border-radius: 10px;
-    flex-direction: column; /* Ensure vertical stacking */
+    flex-direction: column;
+    /* Ensure vertical stacking */
 }
 
 #services .s-list .s-item .service-content {
@@ -446,14 +440,15 @@ body {
     border-radius: 10px;
     margin-top: 10px;
 }
-#services .s-list .s-item .service-content img{
+
+#services .s-list .s-item .service-content img {
     width: 100%;
     border-radius: 10px;
     margin-top: 10px;
 }
 
 
-#skills1 p{
+#skills1 p {
     text-align: center;
 }
 
@@ -461,8 +456,9 @@ body {
 /* Keyframes for Different Colors */
 @keyframes glow-blue {
     0% {
-        box-shadow: 0px  5px  rgba(89, 109, 181, 0.5);
+        box-shadow: 0px 5px rgba(89, 109, 181, 0.5);
     }
+
     100% {
         box-shadow: 0 0 20px rgba(89, 109, 181, 1);
     }
@@ -472,6 +468,7 @@ body {
     0% {
         box-shadow: 0 0 5px rgba(39, 86, 58, 0.5);
     }
+
     100% {
         box-shadow: 0 0 20px rgb(45, 220, 115);
     }
@@ -481,6 +478,7 @@ body {
     0% {
         box-shadow: 0 0 5px rgba(232, 232, 20, 0.5);
     }
+
     100% {
         box-shadow: 0 0 20px rgba(232, 232, 20, 1);
     }
@@ -490,6 +488,7 @@ body {
     0% {
         box-shadow: 0 0 5px rgba(149, 89, 181, 0.5);
     }
+
     100% {
         box-shadow: 0 0 20px rgba(149, 89, 181, 1);
     }
@@ -510,13 +509,17 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: -10px; /* Offset to counteract child margin */
+    margin: -10px;
+    /* Offset to counteract child margin */
 }
 
 .software-item {
-    flex: 1 1 calc(25% - 20px); /* 4 items per row */
-    width: calc(25% - 20px); /* Adjust the width as needed */
-    margin: 10px; /* Minimum 10px spacing */
+    flex: 1 1 calc(25% - 20px);
+    /* 4 items per row */
+    width: calc(25% - 20px);
+    /* Adjust the width as needed */
+    margin: 10px;
+    /* Minimum 10px spacing */
     text-align: center;
     background-color: rgba(0, 0, 0, 0.1);
     border: 10px solid rgba(0, 0, 0, 0.1);
@@ -545,13 +548,15 @@ body {
 
 @media screen and (max-width: 768px) {
     .software-item {
-        flex: 1 1 calc(50% - 20px); /* 2 items per row on smaller screens */
+        flex: 1 1 calc(50% - 20px);
+        /* 2 items per row on smaller screens */
     }
 }
 
 @media screen and (max-width: 480px) {
     .software-item {
-        flex: 1 1 100%; /* 1 item per row on very small screens */
+        flex: 1 1 100%;
+        /* 1 item per row on very small screens */
     }
 }
 
@@ -560,53 +565,73 @@ body {
     margin-bottom: 10px;
     font-size: 0.9 em;
 }
+
 /* Specific glow colors for each item */
-#Alight{
-    box-shadow: 0 0 15px 5px rgba(2, 84, 2, 0.6); /* Red glow */
+#Alight {
+    box-shadow: 0 0 15px 5px rgba(2, 84, 2, 0.6);
+    /* Red glow */
 }
-#Alight:hover{
-    box-shadow: 0 0 15px 5px rgba(243, 240, 227, 0.6); /* Red glow */
+
+#Alight:hover {
+    box-shadow: 0 0 15px 5px rgba(243, 240, 227, 0.6);
+    /* Red glow */
 }
 
 
-#Capcut{
-    box-shadow: 0 0 15px 5px rgba(2, 84, 2, 0.6); /* Green glow */
+#Capcut {
+    box-shadow: 0 0 15px 5px rgba(2, 84, 2, 0.6);
+    /* Green glow */
 }
-#Capcut:hover{
-    box-shadow: 0 0 15px 5px rgba(243, 240, 227, 0.6); /* Red glow */
+
+#Capcut:hover {
+    box-shadow: 0 0 15px 5px rgba(243, 240, 227, 0.6);
+    /* Red glow */
 }
 
 #Lightroom {
-    box-shadow: 0 0 15px 5px rgba(2, 84, 2, 0.6); /* Blue glow */
-}
-#Lightroom:hover{
-    box-shadow: 0 0 15px 5px rgba(243, 240, 227, 0.6); /* Red glow */
+    box-shadow: 0 0 15px 5px rgba(2, 84, 2, 0.6);
+    /* Blue glow */
 }
 
-#AdobeP{
-    box-shadow: 0 0 15px 5px rgba(2, 84, 2, 0.6); /* Yellow glow */
-}
-#AdobeP:hover{
-    box-shadow: 0 0 15px 5px rgba(243, 240, 227, 0.6); /* Red glow */
+#Lightroom:hover {
+    box-shadow: 0 0 15px 5px rgba(243, 240, 227, 0.6);
+    /* Red glow */
 }
 
-#AdobeE{
-    box-shadow: 0 0 15px 5px rgba(2, 84, 2, 0.6); /* Magenta glow */
+#AdobeP {
+    box-shadow: 0 0 15px 5px rgba(2, 84, 2, 0.6);
+    /* Yellow glow */
 }
-#AdobeE:hover{
-    box-shadow: 0 0 15px 5px rgba(243, 240, 227, 0.6); /* Red glow */
+
+#AdobeP:hover {
+    box-shadow: 0 0 15px 5px rgba(243, 240, 227, 0.6);
+    /* Red glow */
+}
+
+#AdobeE {
+    box-shadow: 0 0 15px 5px rgba(2, 84, 2, 0.6);
+    /* Magenta glow */
+}
+
+#AdobeE:hover {
+    box-shadow: 0 0 15px 5px rgba(243, 240, 227, 0.6);
+    /* Red glow */
 }
 
 #AdobeXD {
-    box-shadow: 0 0 15px 5px rgba(2, 84, 2, 0.6); /* Cyan glow */
+    box-shadow: 0 0 15px 5px rgba(2, 84, 2, 0.6);
+    /* Cyan glow */
 }
-#AdobeXD:hover{
-    box-shadow: 0 0 15px 5px rgba(243, 240, 227, 0.6); /* Red glow */
+
+#AdobeXD:hover {
+    box-shadow: 0 0 15px 5px rgba(243, 240, 227, 0.6);
+    /* Red glow */
 }
 
 @media (min-width: 768px) {
     .software-item {
-        flex: 1 1 calc(25% - 20px); /* 4 items per row */
+        flex: 1 1 calc(25% - 20px);
+        /* 4 items per row */
         margin: 10px;
     }
 }
@@ -619,35 +644,42 @@ body {
     padding: 20px;
     text-align: center;
 }
- 
+
 .footer img.logo2 {
     width: 80px;
     height: auto;
     margin-bottom: 10px;
-    vertical-align: middle; /* Aligns the logo vertically with adjacent text */
+    vertical-align: middle;
+    /* Aligns the logo vertically with adjacent text */
 }
 
 .link-logos {
     display: inline-block;
-    margin-left: 10px; /* Adjust spacing between logo and icons */
-    vertical-align: middle; /* Aligns icons vertically with adjacent text */
+    margin-left: 10px;
+    /* Adjust spacing between logo and icons */
+    vertical-align: middle;
+    /* Aligns icons vertically with adjacent text */
 }
 
 .link-logos i {
     font-size: 24px;
-    margin: 0 30px; /* Adjust spacing between icons */
-    color: #fff; /* Set icon color */
+    margin: 0 30px;
+    /* Adjust spacing between icons */
+    color: #fff;
+    /* Set icon color */
 }
 
 .links {
     list-style-type: none;
     padding: 0;
-    margin-top: 10px; /* Adjust spacing between icons and links */
+    margin-top: 10px;
+    /* Adjust spacing between icons and links */
 }
 
 .links li {
     display: inline-block;
-    margin: 0 10px; /* Adjust spacing between links */
+    margin: 0 10px;
+    /* Adjust spacing between links */
 }
 
 .links li a.linkstyle {
