@@ -291,6 +291,12 @@ body {
     margin: 10px 0;
 }
 
+
+
+
+
+
+/*skillabegin
 .skills ul {
     list-style-type: none;
     padding: 0;
@@ -300,7 +306,7 @@ body {
     margin-bottom: 5px;
 }
 
-/* Basic Styles */
+
 #skills1 h1 {
     text-align: center;
     text-decoration: double;
@@ -339,7 +345,7 @@ body {
 
 
 /* Different Hover Effects for Each Class */
-#skills1 div ol li img#Graphic-Design:hover {
+/*#skills1 div ol li img#Graphic-Design:hover {
     transform: translateY(-5px);
     box-shadow: 10px 10px 10px 10x rgba(89, 109, 181, 0.5);
     animation: glow-blue 1s infinite alternate;
@@ -361,7 +367,21 @@ body {
     transform: translateY(-5px);
     box-shadow: 10px 10px 10px 10x rgba(149, 89, 181, 0.5);
     animation: glow-purple 1s infinite alternate;
-}
+}skillsend*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

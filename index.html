@@ -136,7 +136,31 @@
         </section>
 
 
-        <section id="skills1">
+        <!--<h1 data-aos="fade-up" data-aos-duration="1000">MY SKILLS</h1>
+        <ul class="results">
+            <li class="result">
+                <a href="#"><img
+                        src="image_vids\s1.png" width="500" height="500" alt=""></a>
+            </li>
+            <li class="result">
+                <a href="#"><img
+                        src="image_vids\s2.png"
+                        width="500" height="500" alt=""></a>
+            </li>
+            <li class="result">
+                <a href="#"><img
+                        src="image_vids\s3.png"
+                        width="500" height="500" alt=""></a>
+            </li>
+            <li class="result">
+                <a href="#"><img
+                        src="image_vids\s4.png"
+                        width="500" height="500" alt=""></a>
+            </li>
+        </ul>-->
+
+
+        <!--<section id="skills1">
             <h1 data-aos="fade-up" data-aos-duration="1000">MY SKILLS</h1>
             <div class="container" id="content-container">
                 <ol class="horizontal-list">
@@ -169,7 +193,238 @@
                     </li>
                 </ol>
             </div>
-        </section>
+        </section>-->
+        <div class="container01">
+            <h1>MY SKILLS</h1>
+            <div class="gallery-wrap">
+                <div class="item item-1">
+                    <img src="image_vids\me1.gif" alt="Skill 1">
+                    <div class="text-box">
+                        <p>GRAPHIC DESIGNS</p>
+                        <a href="https://example.com" class="btn">View</a>
+                    </div>
+                </div>
+                <div class="item item-2">
+                    <img src="image_vids/me4.png" alt="Skill 2">
+                    <div class="text-box">
+                        <p>SNAPSHOTS</p>
+                        <a href="https://example.com" class="btn">View</a>
+                    </div>
+                </div>
+                <div class="item item-3">
+                    <img src="image_vids\me3.png" alt="Skill 3">
+                    <div class="text-box">
+                        <p>HIGHLIGHTS</p>
+                        <a href="https://example.com" class="btn">View</a>
+                    </div>
+                </div>
+                <div class="item item-4">
+                    <img src="image_vids/me2.gif" alt="Skill 4">
+                    <div class="text-box">
+                        <p>TEXT ANIMATIONS</p>
+
+                        <a href="https://example.com" class="btn">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="social">
+            <a href="https://twitter.com/StefCharle" target="_blank">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/149103/twitter.svg" alt="">
+            </a>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const items = document.querySelectorAll('.gallery-wrap .item');
+
+                items.forEach(item => {
+                    item.addEventListener('mouseenter', () => {
+                        items.forEach(i => i.classList.remove('expanded')); // Remove 'expanded' class from all items
+                        item.classList.add('expanded'); // Add 'expanded' class to the hovered item
+                    });
+                });
+            });
+        </script>
+
+        <style>
+            html,
+            body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+            }
+
+            .container01 {
+                padding: 75px 0;
+                margin: 0 auto;
+                width: 90%;
+                /* Adjust width to be responsive */
+                max-width: 1140px;
+                /* Set max-width for larger screens */
+                text-align: center;
+            }
+
+            .container01 h1 {
+                margin-bottom: 45px;
+                font-family: 'Oswald', sans-serif;
+                font-size: 44px;
+                text-transform: uppercase;
+                color: #f7f6f6;
+            }
+
+            .container01 p {
+
+                margin: 0;
+                text-transform: uppercase;
+                font-weight: 900;
+                font-size: 3rem;
+                color: #ee6352;
+                line-height: .8;
+                background-image: var(--gradient);
+                background-clip: text;
+                color: transparent;
+                display: inline-block;
+                background-size: 300%;
+                transition: background-position 1s;
+                -webkit-text-stroke: 1px white;
+            }
+
+            
+
+            .gallery-wrap {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 70vh;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                /* Allow items to wrap to the next line */
+            }
+
+            .item {
+                position: relative;
+                flex: 1;
+                height: 100%;
+                overflow: hidden;
+                transition: flex 0.8s ease;
+                margin: 5px;
+                /* Add spacing between items */
+            }
+
+            .item img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: opacity 0.3s ease;
+            }
+
+            .item.expanded {
+                flex: 3;
+            }
+
+            .text-box {
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: #fff;
+                padding: 10px;
+                border-radius: 5px;
+                text-align: left;
+                width: 80%;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+
+            .item:hover .text-box {
+                opacity: 1;
+            }
+
+            .btn {
+                display: inline-block;
+                margin-top: 10px;
+                padding: 8px 16px;
+                background-color: #f7f6f6;
+                color: #000;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+            }
+
+            .btn:hover {
+                background-color: #ddd;
+            }
+
+            .social {
+                position: absolute;
+                right: 35px;
+                bottom: 0;
+            }
+
+            .social img {
+                display: block;
+                width: 32px;
+            }
+
+            /* Responsive Styles */
+            @media (max-width: 768px) {
+                .gallery-wrap {
+                    flex-direction: column;
+                    height: auto;
+                }
+
+                .item {
+                    margin: 10px 0;
+                    /* Increase spacing for smaller screens */
+                }
+
+                .text-box {
+                    width: 90%;
+                    font-size: 14px;
+                }
+
+                .btn {
+                    padding: 6px 12px;
+                }
+
+                h1 {
+                    font-size: 36px;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .container01 {
+                    padding: 50px 0;
+                }
+
+                h1 {
+                    font-size: 28px;
+                }
+
+                .text-box {
+                    width: 95%;
+                    font-size: 12px;
+                }
+
+                .btn {
+                    padding: 4px 8px;
+                }
+
+            }
+        </style>
+
+
+
+
+
+
+
+
+
+
         <section id="software">
             <h2 data-aos="fade-up" data-aos-duration="1000">Software Proficiency</h2>
             <div class="software-list">
@@ -564,6 +819,98 @@
         margin: 10px 0;
     }
 
+
+
+
+
+    /*ul {
+        display: flex;
+        width: calc(80% - 2rem);
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+
+    li {
+        padding: 0;
+    }
+
+    img {
+        max-width: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: all 0.2s ease;
+    }
+
+    ul:is(:hover, :focus-within) img {
+        opacity: calc(0.1 + (var(--active-lerp, 0) * 0.9));
+        filter: grayscale(calc(1 - var(--active-lerp, 0)));
+    }
+
+    :root {
+        --lerp-0: 1;
+        --lerp-1: 0.5787037;
+        --lerp-2: 0.2962963;
+        --lerp-3: 0.125;
+        --lerp-4: 0.037037;
+        --lerp-5: 0.0046296;
+        --lerp-6: 0;
+    }
+
+    a {
+        outline-offset: 4px;
+    }
+
+    li {
+        flex: calc(0.1 + (var(--active-lerp, 0) * 1));
+        transition: flex 0.2s ease;
+    }
+
+    li:is(:hover, :focus-within) {
+        --active-lerp: var(--lerp-0);
+        z-index: 7;
+    }
+
+    li:has(+ li:is(:hover, :focus-within)),
+    li:is(:hover, :focus-within)+li {
+        --active-lerp: var(--lerp-1);
+        z-index: 6;
+    }
+
+    li:has(+ li + li:is(:hover, :focus-within)),
+    li:is(:hover, :focus-within)+li+li {
+        --active-lerp: var(--lerp-2);
+        z-index: 5;
+    }
+
+    li:has(+ li + li + li:is(:hover, :focus-within)),
+    li:is(:hover, :focus-within)+li+li+li {
+        --active-lerp: var(--lerp-3);
+        z-index: 4;
+    }
+
+    li:has(+ li + li + li + li:is(:hover, :focus-within)),
+    li:is(:hover, :focus-within)+li+li+li+li {
+        --active-lerp: var(--lerp-4);
+        z-index: 3;
+    }
+
+    li:has(+ li + li + li + li + li:is(:hover, :focus-within)),
+    li:is(:hover, :focus-within)+li+li+li+li+li {
+        --active-lerp: var(--lerp-5);
+        z-index: 2;
+    }
+
+    li:has(+ li + li + li + li + li + li:is(:hover, :focus-within)),
+    li:is(:hover, :focus-within)+li+li+li+li+li+li {
+        --active-lerp: var(--lerp-6);
+        z-index: 1;
+    }*/
+
+
+
+
+
     .skills ul {
         list-style-type: none;
         padding: 0;
@@ -573,7 +920,7 @@
         margin-bottom: 5px;
     }
 
-    /* Basic Styles */
+
     #skills1 h1 {
         text-align: center;
         text-decoration: double;
